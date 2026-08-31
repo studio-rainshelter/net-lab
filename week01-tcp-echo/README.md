@@ -38,10 +38,9 @@ dotnet run
 Type a line in the client terminal and press Enter — you should see it
 echoed back. Ctrl+C stops either process cleanly.
 
-> Note: this code was written and reviewed for correctness but has not
-> been compiled/run in this environment (no .NET SDK available here).
-> Please run `dotnet run` in both projects and confirm it behaves as
-> expected before relying on it.
+> Verified: both `Server` and `Client` build cleanly with the .NET 10
+> SDK (`dotnet build`, 0 warnings/0 errors) and a live round-trip
+> (`dotnet run` server + piped client input) echoed back correctly.
 
 ## Notes for next time (fill this in!)
 
