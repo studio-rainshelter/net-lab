@@ -29,8 +29,8 @@ try
             break;
         }
 
-        byte[] payload = Encoding.UTF8.GetBytes(line);
-        await stream.WriteAsync(payload.AsMemory(), cts.Token);
+        int byteCount = Encoding.UTF8.GetBytes(line, buffer);
+        await stream.WriteAsync(buffer.AsMemory(0, byteCount), cts.Token);
 
         int bytesRead = await stream.ReadAsync(buffer.AsMemory(), cts.Token);
         if (bytesRead == 0)
