@@ -35,3 +35,7 @@ finished, production-style project.
 3. `week03-pipelines` — `System.IO.Pipelines` for high-throughput parsing
 4. `week04-tls` — TLS via `SslStream`
 5. `week05+` — HTTP/web protocols, building toward a finished project
+
+---
+
+# 답변은 반드시 한국어로 할 것.
